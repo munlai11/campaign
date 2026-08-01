@@ -37,7 +37,7 @@ To function, ZeroAds reads certain information **temporarily** on your device to
 
 | Data | Why it's read | Stored? | Transmitted? |
 |---|---|---|---|
-| The hostname of the page in your active tab | To check whether the site is on your allowlist and to display the per-tab block count | No — read ephemerally when the popup opens | No |
+| The hostname of the page in your active tab | To check whether the site is on your allowlist | No — read ephemerally when the popup opens | No |
 | Network requests made by the pages you visit | To match them against blocking rules and block ad/tracker requests | No | No |
 
 ---
@@ -48,11 +48,10 @@ ZeroAds stores the following **locally** in your browser using Chrome's `chrome.
 
 | Stored data | Purpose | Synced across devices? |
 |---|---|---|
-| Your settings (e.g. master on/off, badge preference) | Remembers your preferences between sessions | Via Chrome's built-in sync (see note below) |
+| Your settings (e.g. master on/off) | Remembers your preferences between sessions | Via Chrome's built-in sync (see note below) |
 | Your site allowlist | Remembers where you've paused blocking | Via Chrome's built-in sync |
 | Your custom filter rules | Stores rules you've added | Via Chrome's built-in sync |
 | The cached EasyList cosmetic-filter map | Avoids re-downloading filter data on every page load | No (local only) |
-| Block counts (per-tab and total) | Powers the popup and badge counter | No (local only) |
 
 **About Chrome sync:** Some of the above is stored in `chrome.storage.sync`, which Chrome itself may sync to your Google account so your preferences follow you across signed-in devices. This is a feature of your Google account and Chrome, not ZeroAds — ZeroAds does not operate this sync and has no access to it. If you'd prefer these items not sync, you can disable Chrome sync in your browser settings.
 
@@ -99,7 +98,7 @@ Because all data ZeroAds uses is stored locally on your device, you have full co
 
 - **View or change your settings** — Open the ZeroAds popup or Options page at any time.
 - **Clear your allowlist and custom filters** — Use the Options page to remove individual entries, or uninstall the extension to remove everything at once.
-- **Clear all ZeroAds data** — Removing the extension from your browser automatically deletes all locally-stored settings, allowlists, custom filters, and counts. Nothing is left behind.
+- **Clear all ZeroAds data** — Removing the extension from your browser automatically deletes all locally-stored settings, allowlists, and custom filters. Nothing is left behind.
 - **Chrome's site-data controls** — You can also clear extension storage via Chrome's "Clear browsing data" → "Cookies and other site data."
 
 ---
