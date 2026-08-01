@@ -1,11 +1,11 @@
 # Focus Tab — Privacy Policy
 
-_Last updated: July 25, 2026_
+_Last updated: August 1, 2026_
 
 Focus Tab is a new-tab-page browser extension. It replaces your new tab with a
-clock, greeting, daily focus, to-do list, weather, quote, quick links, and
-search. This policy explains, in plain language, what data the extension uses
-and where it goes.
+clock, greeting, daily focus, to-do list, weather, quote, and quick links. This
+policy explains, in plain language, what data the extension uses and where it
+goes.
 
 > **The short version:** Focus Tab has no servers, no accounts, and no
 > analytics. The only thing you can type in (your name, focus, to-dos, links,
@@ -27,8 +27,8 @@ browser** via `chrome.storage.sync` (the browser's own synced-storage feature):
 - An optional **display name** (used only to personalize the greeting).
 - A **daily focus** and a **to-do list** (free text you choose to type).
 - **Quick links** (bookmarks you add: a title and URL).
-- **Settings** (clock format, temperature unit, search engine, background
-  dimming, show-seconds).
+- **Settings** (clock format, temperature unit, background dimming,
+  show-seconds).
 
 This data lives in your browser profile. If you are signed into Chrome or Brave
 sync, the browser replicates it across your signed-in devices through
